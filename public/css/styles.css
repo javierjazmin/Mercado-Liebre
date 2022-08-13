@@ -1,14 +1,27 @@
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: #EAC926;
     font-size: 12px;
-    
+    margin: 0;
+    padding: 0;
+    }
+header{
+    background-color: #EAC926;
 }
+section{
+    display: block;
+}
+main{
+    background-color: #ebebeb;
+}   
 h3{
     font-size: 24px;
 }
 h4{
     font-size: 16px;
+    color: #666;
+}
+.compra-en-cuotas{
+    text-align: center;
 }
 .precio{
     font-size: 18px;
@@ -16,26 +29,54 @@ h4{
 .descuentos{
     font-size: 16px;
 }
-
+.descripción{
+    font-size: 16px;
+}
+.burger-box{
+    background-color: #1259c3;
+    width: 3em;
+    height: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
 .burger-menu{
     text-align: center;
+    font-size: 1.5em;
+    color: #ebebeb;
+    padding: 8px;
+}
+.fa-bars{
+    font-weight: 900;
 }
 
-.fa-bars{
-            color: #ebebeb;
-            background-color: #03264C;
-            font-size: 24px;
-            
-}
+                         
+
 footer{
-        background-color: #ebebeb;
+        background-color: white;
         text-align: center;
-        line-height: 10px;
+        color: #666;
 }
-.fa-solid{
-        width: 2em;
+.fa-gift{
+    color: #1259c3;
+    width: 2em;
     line-height: 10px;
 }
+.fa-credit-card{
+    color: #1259c3;
+    width: 2em;
+    line-height: 10px;
+}
+.fa-user-shield{
+    color: #1259c3;
+    width: 2em;
+    line-height: 10px;
+}
+
+
 h5{
     text-align: left;
 }
