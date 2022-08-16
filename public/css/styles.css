@@ -1,82 +1,156 @@
-body{
+*{
+    box-sizing: border-box;
+   }
+
+body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     margin: 0;
     padding: 0;
-    }
-header{
+    width: 98%vw;
+}
+
+header {
     background-color: #EAC926;
+    margin-bottom: 12px;
 }
-section{
+
+section {
     display: block;
+    margin: auto;
 }
-main{
+
+main {
     background-color: #ebebeb;
-}   
-h3{
+    text-align: center;
+    width: 98vw;
+}
+article{
+    margin: 10px;
+}
+.site-login{
+    display: none;
+}
+.ofertas{
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+.ultima{
+    background-color: white;
+    display: block;
+    margin: auto;
+}
+.caja{
+    background-color: white;
+    border-top: 1px solid #ebebeb;
+    margin: 15px;
+   
+
+}
+.fa-truck{
+    color: #39b54a;
+    size: 2em;
+    background-color: white;
+    display: block;
+    margin: 10px;
+}
+
+h3 {
     font-size: 24px;
 }
-h4{
+
+h4 {
     font-size: 16px;
     color: #666;
 }
-.compra-en-cuotas{
+
+.compra-en-cuotas {
     text-align: center;
 }
-.precio{
+
+.precio {
     font-size: 18px;
+    background-color: white;
 }
-.descuentos{
+
+.descuentos {
     font-size: 16px;
+    background-color: white;
 }
-.descripción{
+
+.descripción {
     font-size: 16px;
+    background-color: white;
+    display: none;
 }
-.burger-box{
+
+.burger-box {
     background-color: #1259c3;
     width: 3em;
     height: 3em;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 6px;
-    margin-top: 12px;
-    display: flex;
-    justify-content: center;
+    margin:15px auto 15px auto;
+    display: block;
+         
 }
-.burger-menu{
+
+.burger-menu {
     text-align: center;
     font-size: 1.5em;
     color: #ebebeb;
     padding: 8px;
 }
-.fa-bars{
-    font-weight: 900;
+
+footer {
+    background-color: white;
+    text-align: center;
+    color: #666;
 }
 
-                         
-
-footer{
-        background-color: white;
-        text-align: center;
-        color: #666;
-}
-.fa-gift{
-    color: #1259c3;
-    width: 2em;
-    line-height: 10px;
-}
-.fa-credit-card{
-    color: #1259c3;
-    width: 2em;
-    line-height: 10px;
-}
-.fa-user-shield{
+.fa-gift {
     color: #1259c3;
     width: 2em;
     line-height: 10px;
 }
 
+.fa-credit-card {
+    color: #1259c3;
+    width: 2em;
+    line-height: 10px;
+}
 
-h5{
+.fa-user-shield {
+    color: #1259c3;
+    width: 2em;
+    line-height: 10px;
+}
+
+
+h5 {
     text-align: left;
+}
+
+
+@media (min-width: 361px){
+   
+}
+@media (min-width: 769px){
+    .descripción{
+        display: block;
+    }
+    .ofertas{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .ultima{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-box{
+        display: none;
+    }
+    .site-login{
+        display: block;
+    }
+
+
 }
