@@ -1,28 +1,62 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
    }
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    margin: 0;
-    padding: 0;
-    width: 98%vw;
-}
+    }
 
 header {
     background-color: #EAC926;
     padding: 20px;
 }
-.logo{
-    width: 200px;
+.main-header-top{
+    display: flex;
+             
+    }
+.barraDeBusqueda{
+    flex-grow: 0.5;
 }
+.logo{
+    width: 50%;
+    flex-grow: 0.5;
+} 
+.bannerDeOfertas{
+    width: 100%;
+}  
+
+
+.imgCafetera{
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+} 
+.imgMac{
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+}
+.imgS10{
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+}
+.imgTv{
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+}       
 .compra-en-cuotas{
     padding: 12px;
 }
 section {
     display: block;
     margin: 0;
+}
+.articles{
+    padding: 24px;
+    column-gap: 24px;
+
+
 }
 
 main {
@@ -33,7 +67,7 @@ main {
 }
 article{
     margin: 10px;
-}
+    }
 .nav-bar{
     display: none;
 }
@@ -42,26 +76,60 @@ article{
     background-color: white;
     display: block;
     margin: auto;
-}
+    padding: 24px 0;
+        
+} 
 .ultima{
     background-color: white;
     display: block;
     margin: auto;
+    padding: 24px 0;
+    
 }
 .caja{
     background-color: white;
-    border-top: 1px solid #ebebeb;
+    border-top: 2px solid #ebebeb;
     margin: 15px;
    
 
 }
+.cajaCafetera{
+    display: flex;
+    text-align: left;
+        }
+.cajaTv{
+    display: flex;
+    text-align: left;
+}
+.cajaMac{
+    display: flex;
+    text-align: left;
+
+}   
+.cajaS10{
+    display: flex;
+    text-align: left;
+}     
 .fa-truck{
     color: #39b54a;
     size: 2em;
     background-color: white;
-    display: block;
+    display: flex;
     margin: 10px;
-}
+    }
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+    top: -15px;
+   }
 
 h3 {
     font-size: 24px;
@@ -81,18 +149,21 @@ h4 {
 .precio {
     font-size: 18px;
     background-color: white;
+    flex-grow: 0.3;
 }
 
 .descuentos {
     font-size: 16px;
     background-color: white;
+    flex-grow: 0.7;
+    color: #39b54a;
 }
 
 .descripción {
     font-size: 16px;
     background-color: white;
     display: none;
-}
+    }
      
 .burger-menu {
     background-color: #1259c3;
@@ -104,6 +175,22 @@ h4 {
     border-radius: 8px;
     display: block;
     margin: auto;
+}
+.toparticles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
+     }
+.bottomarticles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 24px;
+    gap: 24px;
 }
 
 footer {
@@ -140,18 +227,17 @@ h5 {
 }
 
 
-@media (min-width: 361px){
-   
-}
-@media (min-width: 769px){
-    .descripción{
-        display: block;
+@media (min-width: 768px){ 
+    .logo{
+        max-width: 300px;
     }
     .ofertas{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+        margin: 0;
     }
     .ultima{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
+        margin: 0;
     }
     .burger-menu{
         display: none;
@@ -175,13 +261,89 @@ h5 {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }   
+    }  
+    
+    .toparticles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px;
+        gap: 24px;
+         }
+    .bottomarticles{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px;
+        gap: 24px;
+    }
+}
 
+         
+    
+   
 
+@media (min-width: 990px){
+    .logo{
+        max-width: 350px;
+    }
+    .descripción{
+        display: block;
+    }
+    .ofertas{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 23%;
+        margin: 0;
+            }
+    .ultima{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 23%;
+        margin: 0;
+            }
+    .burger-menu{
+        display: none;
+    }
+    .nav-bar{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    .nav-bar ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        }
+    a{
+        margin: 0 10px;
+    }
+    .main-header-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+    .toparticles{
+        display: flex;
+        flex-direction: row;
+            } 
+    .bottomarticles{
+        display: flex;
+        flex-direction: row;
+    }
 }
 @media (min-width: 1200px){
-    .main-header{
+    *{
         max-width: 1200px;
 
+}
+.nav-bar ul{
+    font-size: 19px;
+}
+.compra-en-cuotas{
+    font-size: 19px;
+    font-weight: bolder;
 }
 }
