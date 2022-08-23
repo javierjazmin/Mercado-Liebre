@@ -15,14 +15,26 @@ header {
 }
 .main-header-top{
     display: flex;
+    flex-grow: 0.5;
              
     }
-.barraDeBusqueda{
-    flex-grow: 0.5;
-}
+.cont-barraBusqueda{
+    display: flex;
+    width: 50%;
+        }
+.barraBusqueda{
+    width: 100%;
+    padding: 5px;
+    }
+.fa-magnifying-glass{
+        background-color: #FFF;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+        position:absolute;
+        }
 .logo{
     width: 50%;
-    flex-grow: 0.5;
 } 
 .bannerDeOfertas{
     width: 100%;
