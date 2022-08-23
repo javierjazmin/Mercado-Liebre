@@ -35,7 +35,56 @@ header {
         }
 .logo{
     width: 50%;
-} 
+}
+.register-container{
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #ebebeb;
+    justify-content: center;
+    }
+.form-birthday, .form-perfil, .form-checkbox, .form-foto, .form-contraseña p{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+.inputFoto, .inputNombre, .inputUsuario, .inputEmail, .inputFecha, .inputDomicilio, .inputPassword {
+        border-radius: 6px;
+        border: none;
+        height: 38px;
+        margin-top: 12px;
+        padding: 12px;
+        margin-bottom: 12px;
+        width: 100%;
+        }
+.radio-perfilComprador, .radio-perfilVendedor{
+    margin: auto;
+    display: block;
+}
+.list-checkbox{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 24px;
+}
+.button-enviar, .button-borrar{
+    border: none;
+    background-color: #1259c3;
+    color: #FFF;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+.form-nombreCompleto{
+    justify-content: center;
+}
+
 .bannerDeOfertas{
     width: 100%;
 }  
@@ -210,6 +259,15 @@ footer {
     text-align: center;
     color: #666;
     padding: 10px 0 0 0;
+}
+.footer-container{
+    display: flex;
+    margin: 15px 0;
+    padding: 10px;
+
+}
+.lineaFinal{
+    margin: 6px;    
 }
 
 .gift {
