@@ -21,6 +21,7 @@ header {
 .cont-barraBusqueda{
     display: flex;
     width: 50%;
+    position: relative;
         }
 .barraBusqueda{
     width: 100%;
@@ -31,12 +32,13 @@ header {
         display: flex;
         justify-content: flex-end;
         align-self: center;
-        position:absolute;
+        position:relative;
+        right: 20px;
         }
 .logo{
     width: 50%;
 }
-.register-container{
+.register-container, .login-container{
     width: 50%;
     display: block;
     margin: auto;
@@ -58,13 +60,15 @@ header {
         margin-bottom: 12px;
         width: 100%;
         }
-.radio-perfilComprador, .radio-perfilVendedor{
+.radio-perfil{
     margin: auto;
     display: block;
+    padding: 12px;
 }
 .list-checkbox{
     display: flex;
     justify-content: space-between;
+    padding: 12px;
     
 }
 .button-container{
@@ -77,13 +81,33 @@ header {
     border: none;
     background-color: #1259c3;
     color: #FFF;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 10px;
+    transition: all 450ms;
+    }
+.button-enviar:hover, .button-borrar:hover{
+
+    background-color: #0022AA;
+}    
+.login-recordarme{
+    padding: 8px;
+}
+.button-ingresar{
+    border: none;
+    background-color: #1259c3;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    width: 100%;
+    transition: all 450ms;
+}
+.button-ingresar:hover{
+
+    background-color: #0022AA;
 }
 
-.form-nombreCompleto{
-    justify-content: center;
-}
 
 .bannerDeOfertas{
     width: 100%;
@@ -133,20 +157,23 @@ article{
     display: none;
 }
 
-.ofertas{
+.ofertas, .ultima{
     background-color: white;
     display: block;
     margin: auto;
     padding: 24px 0;
+    position: relative;
+    box-shadow: none;
+    transition: all 450ms;
         
 } 
-.ultima{
-    background-color: white;
-    display: block;
-    margin: auto;
-    padding: 24px 0;
-    
+.ofertas:hover, .ultima:hover{
+
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(1.1);
 }
+  
+
 .caja{
     background-color: white;
     border-top: 2px solid #ebebeb;
@@ -177,7 +204,14 @@ article{
     background-color: white;
     display: flex;
     margin: 10px;
+    position: relative;
+    left:250px;
+    bottom: 10px;
+    transition: all 450ms;
     }
+.fa-truck:hover{
+    rotate: -90deg;           
+}
 main section article i{
     display: block;
     font-size: 16px;
@@ -220,11 +254,20 @@ h4 {
     color: #39b54a;
 }
 
-.descripción {
+.descripción{
     font-size: 16px;
     background-color: white;
-    display: none;
-    }
+    display:block;
+    opacity: 0;
+    transition: all 450ms;
+    
+}
+.descripción:hover{
+    opacity: 1;
+    
+   
+}
+
      
 .burger-menu {
     background-color: #1259c3;
@@ -261,35 +304,31 @@ footer {
     padding: 10px 0 0 0;
 }
 .footer-container{
-    display: flex;
+    display: block;
     margin: 15px 0;
-    padding: 10px;
+    padding: 24px;
 
+}
+.lineas-footer{
+    padding: 0 50px;
 }
 .lineaFinal{
     margin: 6px;    
 }
 
-.gift {
+.gift, .credit-card, .shield {
     color: #1259c3;
     font-size: 2em;
     line-height: 10px;
     margin: auto;
+    transition: all 450ms;
+}
+.gift:hover, .credit-card:hover, .shield:hover {
+    color: greenyellow;
+
+
 }
 
-.credit-card {
-    color: #1259c3;
-    font-size:2em;
-    line-height: 10px;
-    margin: auto;
-}
-
-.shield {
-    color: #1259c3;
-    font-size: 2em;
-    line-height: 10px;
-    margin: auto;
-}
 
 
 h5 {
@@ -349,6 +388,8 @@ h5 {
         padding: 24px;
         gap: 24px;
     }
+    
+    
 }
 
          
@@ -359,19 +400,19 @@ h5 {
     .logo{
         max-width: 350px;
     }
-    .descripción{
-        display: block;
+ 
+    .ultima, .ofertas{
+        box-shadow: none;
+        width: 23%;
+        margin: 0;
+        position: relative;
+        transition: all 450ms;
+            }
+    .ultima:hover, .ofertas:hover{
+
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .ofertas{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 23%;
-        margin: 0;
-            }
-    .ultima{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 23%;
-        margin: 0;
-            }
+    
     .burger-menu{
         display: none;
     }
@@ -403,12 +444,27 @@ h5 {
         display: flex;
         flex-direction: row;
     }
+    .fa-truck{
+        color: #39b54a;
+        size: 2em;
+        background-color: white;
+        display: flex;
+        margin: 10px;
+        position: relative;
+        left:150px;
+        bottom: 10px;
+        }
+    .footer-container{
+        display: flex;
+        margin: 15px 0;
+        padding: 10px;
+}
+.lineaFinal{
+    margin: 6px; 
+}
 }
 @media (min-width: 1200px){
-    *{
-        max-width: 1200px;
 
-}
 .nav-bar ul{
     font-size: 19px;
 }

@@ -16,7 +16,10 @@
 <body>
     <header class="main-header">
         <div class="main-header-top"><img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo ml">
-            <h4 class="barraDeBusqueda">Lugar para poner la barra de busqueda</h4>
+            <div class="cont-barraBusqueda">
+                <input type="search" class="barraBusqueda" placeholder="Buscar productos, marcas y más...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
         <section class="compra-en-cuotas">
             <div><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</div>
@@ -62,11 +65,9 @@
             <div class="form-perfil">
                 <p>Perfil de Usuario</p>
             </div>
-            <div class="radio-perfilComprador">
+            <div class="radio-perfil">
                 <input type="radio" value="Comprador" name="perfilUsuario" id="Comprador">
                 <label for="Comprador">Comprador</label>
-            </div>
-            <div class="radio-perfilVendedor">
                 <input type="radio" value="Vendedor" name="perfilUsuario" id="Vendedor">
                 <label for="Vendedor">Vendedor</label>
             </div>

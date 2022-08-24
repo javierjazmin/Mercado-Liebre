@@ -16,7 +16,10 @@
 <body>
     <header class="main-header">
         <div class="main-header-top"><img src="/images/logo-mercado-liebre.svg" class="logo" alt="logo ml">
-            <h4 class="barraDeBusqueda">Lugar para poner la barra de busqueda</h4>
+            <div class="cont-barraBusqueda">
+                <input type="search" class="barraBusqueda" placeholder="Buscar productos, marcas y más...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
         </div>
         <section class="compra-en-cuotas">
             <div><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</div>
@@ -41,58 +44,61 @@
             </nav>
         </section>
     </header>
-    <div class="contenedor-login">
+    <div class="login-container">
         <form action="/login" method="POST">
             <div class="login-nombreUsuario">
-                <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario">
+                <input type="text" class="inputUsuario" placeholder="Nombre de Usuario" required>
             </div>
             <div class="login-contraseña">
-                <input type="password" name="password" placeholder="Contraseña">
+                <input type="password" class="inputPassword" placeholder="Contraseña" required>
             </div>
             <div class="login-recordarme">
                 <input type="checkbox" value="recordarme" name="recordarme" id="recordarme">
                 <label for="recordarme">Recordarme</label>
-              </div>
-              <div class="login-buttonIngresar">
-                <button type="submit">Ingresar</button>
-              </div>
+            </div>
+            <div class="login-buttonIngresar">
+                <button type="submit" class="button-ingresar">Ingresar</button>
+            </div>
         </form>
     </div>
 </body>
 <footer>
-    <article>
-        <div class="credit-card">
-            <i class="fa-solid fa-credit-card"></i>
-        </div>
-        <h4>Pagá con tarjeta o en efectivo</h4>
-        <p>Con Mercado Liebre Cash, tenés cuotas sin
-            interés con tarjeta o efectivo en
-            puntos de pago. ¡Y siempre es seguro!
-        </p>
-    </article>
-    <article>
-        <div class="gift">
-            <i class="fa-solid fa-gift"></i>
-        </div>
-        <h4>Envio gratis desde los $2500</h4>
-        <p>Solo por estar registrado en Mercado Liebre
-            tenes envios gratis en miles de productos. Es
-            un beneficio de Mercado Puntos.
-        </p>
-    </article>
-    <article>
-        <div class="shield">
-            <i class="fa-solid fa-user-shield"></i>
-        </div>
-        <h4>Seguridad de principio a fin</h4>
-        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre
-            no hay nada que no puedas hacer porque estás
-            siempre protegid@.
-        </p>
-    </article>
+    <div class="footer-container">
+        <article>
+            <div class="credit-card">
+                <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <h4>Pagá con tarjeta o en efectivo</h4>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin
+                interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!
+            </p>
+        </article>
+        <article>
+            <div class="gift">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <h4>Envio gratis desde los $2500</h4>
+            <p>Solo por estar registrado en Mercado Liebre
+                tenes envios gratis en miles de productos. Es
+                un beneficio de Mercado Puntos.
+            </p>
+        </article>
+        <article>
+            <div class="shield">
+                <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h4>Seguridad de principio a fin</h4>
+            <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre
+                no hay nada que no puedas hacer porque estás
+                siempre protegid@.
+            </p>
+        </article>
+    </div>
     <div>
         <h5>Copyright @ 1999-2020 Mercado Liebre S.R.L.</h5>
     </div>
+
 </footer>
 
 
