@@ -1,98 +1,127 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   }
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    }
+}
 
 header {
     background-color: #EAC926;
     padding: 20px;
 }
-.main-header-top{
+
+.main-header-top {
     display: flex;
     flex-grow: 0.5;
-             
-    }
-.cont-barraBusqueda{
+
+}
+
+.cont-barraBusqueda {
     display: flex;
     width: 50%;
     position: relative;
-        }
-.barraBusqueda{
+    margin: 15px 0;
+}
+
+.barraBusqueda {
     width: 100%;
     padding: 5px;
-    }
-.fa-magnifying-glass{
-        background-color: #FFF;
-        display: flex;
-        justify-content: flex-end;
-        align-self: center;
-        position:relative;
-        right: 20px;
-        }
-.logo{
+}
+
+.fa-magnifying-glass {
+    background-color: #FFF;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    position: relative;
+    right: 20px;
+}
+
+.logo {
     width: 50%;
 }
-.register-container, .login-container{
+
+.register-container,
+.login-container {
     width: 50%;
     display: block;
     margin: auto;
     padding: 10px;
     background-color: #ebebeb;
     justify-content: center;
-    }
-.form-birthday, .form-perfil, .form-checkbox, .form-foto, .form-contraseña p{
+}
+
+.form-birthday,
+.form-perfil,
+.form-checkbox,
+.form-foto,
+.form-contraseña p {
     font-size: 14px;
     font-weight: bold;
     margin: 12px 0;
 }
-.inputFoto, .inputNombre, .inputUsuario, .inputEmail, .inputFecha, .inputDomicilio, .inputPassword {
-        border-radius: 6px;
-        border: none;
-        height: 38px;
-        margin-top: 12px;
-        padding: 12px;
-        margin-bottom: 12px;
-        width: 100%;
-        }
-.radio-perfil{
+
+.inputFoto,
+.inputNombre,
+.inputUsuario,
+.inputEmail,
+.inputFecha,
+.inputDomicilio,
+.inputPassword {
+    border-radius: 6px;
+    border: none;
+    height: 38px;
+    margin-top: 12px;
+    padding: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.radio-perfil {
     margin: auto;
     display: block;
     padding: 12px;
 }
-.list-checkbox{
+
+.list-checkbox {
     display: flex;
     justify-content: space-between;
     padding: 12px;
-    
+
 }
-.button-container{
+
+.button-container {
     display: flex;
     justify-content: center;
     margin: auto;
     gap: 24px;
 }
-.button-enviar, .button-borrar{
+
+.button-enviar,
+.button-borrar {
     border: none;
     background-color: #1259c3;
     color: #FFF;
     padding: 10px 20px;
     border-radius: 10px;
     transition: all 450ms;
-    }
-.button-enviar:hover, .button-borrar:hover{
+}
+
+.button-enviar:hover,
+.button-borrar:hover {
 
     background-color: #0022AA;
-}    
-.login-recordarme{
+}
+
+.login-recordarme {
     padding: 8px;
 }
-.button-ingresar{
+
+.button-ingresar {
     border: none;
     background-color: #1259c3;
     color: #FFF;
@@ -103,41 +132,48 @@ header {
     width: 100%;
     transition: all 450ms;
 }
-.button-ingresar:hover{
+
+.button-ingresar:hover {
 
     background-color: #0022AA;
 }
 
 
-.bannerDeOfertas{
+.bannerDeOfertas {
     width: 100%;
-}  
+}
 
 
-.imgCafetera{
-    width: 100%;
-    border-bottom: 2px solid #ebebeb;
-} 
-.imgMac{
+.imgCafetera {
     width: 100%;
     border-bottom: 2px solid #ebebeb;
 }
-.imgS10{
+
+.imgMac {
     width: 100%;
     border-bottom: 2px solid #ebebeb;
 }
-.imgTv{
+
+.imgS10 {
     width: 100%;
     border-bottom: 2px solid #ebebeb;
-}       
-.compra-en-cuotas{
+}
+
+.imgTv {
+    width: 100%;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.compra-en-cuotas {
     padding: 12px;
 }
+
 section {
     display: block;
     margin: 0;
 }
-.articles{
+
+.articles {
     padding: 24px;
     column-gap: 24px;
 
@@ -148,16 +184,19 @@ main {
     background-color: #ebebeb;
     text-align: center;
     width: 100vw;
-    
+
 }
-article{
+
+article {
     margin: 10px;
-    }
-.nav-bar{
+}
+
+.nav-bar {
     display: none;
 }
 
-.ofertas, .ultima{
+.ofertas,
+.ultima {
     background-color: white;
     display: block;
     margin: auto;
@@ -165,54 +204,68 @@ article{
     position: relative;
     box-shadow: none;
     transition: all 450ms;
-        
-} 
-.ofertas:hover, .ultima:hover{
+
+}
+
+.ofertas:hover,
+.ultima:hover {
 
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     transform: scale(1.1);
 }
-  
+.ofertas:hover .descripción,
+.ultima:hover .descripción{
+    visibility: visible;
+}
+.ofertas:hover .fa-truck,
+.ultima:hover .fa-truck{
+    rotate: -90deg;
+}
 
-.caja{
+
+.caja {
     background-color: white;
     border-top: 2px solid #ebebeb;
     margin: 15px;
-   
+
 
 }
-.cajaCafetera{
-    display: flex;
-    text-align: left;
-        }
-.cajaTv{
+
+.cajaCafetera {
     display: flex;
     text-align: left;
 }
-.cajaMac{
+
+.cajaTv {
+    display: flex;
+    text-align: left;
+}
+
+.cajaMac {
     display: flex;
     text-align: left;
 
-}   
-.cajaS10{
+}
+
+.cajaS10 {
     display: flex;
     text-align: left;
-}     
-.fa-truck{
+}
+
+.fa-truck {
     color: #39b54a;
     size: 2em;
     background-color: white;
     display: flex;
     margin: 10px;
     position: relative;
-    left:250px;
+    left: 250px;
     bottom: 10px;
     transition: all 450ms;
     }
-.fa-truck:hover{
-    rotate: -90deg;           
-}
-main section article i{
+
+
+main section article i {
     display: block;
     font-size: 16px;
     padding: 5px;
@@ -224,7 +277,7 @@ main section article i{
     position: relative;
     right: 0;
     top: -15px;
-   }
+}
 
 h3 {
     font-size: 24px;
@@ -254,21 +307,13 @@ h4 {
     color: #39b54a;
 }
 
-.descripción{
+.descripción {
     font-size: 16px;
     background-color: white;
-    display:block;
-    opacity: 0;
-    transition: all 450ms;
-    
-}
-.descripción:hover{
-    opacity: 1;
-    
-   
+    display: block;
+    visibility: hidden;
 }
 
-     
 .burger-menu {
     background-color: #1259c3;
     text-align: center;
@@ -280,15 +325,17 @@ h4 {
     display: block;
     margin: auto;
 }
-.toparticles{
+
+.toparticles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     padding: 24px;
     gap: 24px;
-     }
-.bottomarticles{
+}
+
+.bottomarticles {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -303,31 +350,40 @@ footer {
     color: #666;
     padding: 10px 0 0 0;
 }
-.footer-container{
+
+.footer-container {
     display: block;
     margin: 15px 0;
     padding: 24px;
 
 }
-.lineas-footer{
+
+.lineas-footer {
     padding: 0 50px;
 }
-.lineaFinal{
-    margin: 6px;    
+
+.lineaFinal {
+    margin: 6px;
 }
 
-.gift, .credit-card, .shield {
+.gift,
+.credit-card,
+.shield {
     color: #1259c3;
     font-size: 2em;
     line-height: 10px;
     margin: auto;
     transition: all 450ms;
 }
-.gift:hover, .credit-card:hover, .shield:hover {
+
+.gift:hover,
+.credit-card:hover,
+.shield:hover {
     color: greenyellow;
 
 
 }
+
 
 
 
@@ -336,51 +392,52 @@ h5 {
 }
 
 
-@media (min-width: 768px){ 
-    .logo{
+@media (min-width: 768px) {
+    .logo {
         max-width: 300px;
     }
-    .ofertas{
+
+    .ofertas {
         width: 48%;
         margin: 0;
     }
-    .ultima{
+
+    .ultima {
         width: 48%;
         margin: 0;
     }
-    .burger-menu{
+
+    .burger-menu {
         display: none;
     }
-    .nav-bar{
+
+    .nav-bar {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
     }
-    .nav-bar ul{
+
+    .nav-bar ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
         display: flex;
         justify-content: space-between;
-        }
-    a{
+        text-decoration: none;
+        color: black;
+    }
+
+    a {
         margin: 0 10px;
     }
-    .main-header-top{
+
+    .main-header-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }  
-    
-    .toparticles{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 24px;
-        gap: 24px;
-         }
-    .bottomarticles{
+    }
+
+    .toparticles {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -388,88 +445,114 @@ h5 {
         padding: 24px;
         gap: 24px;
     }
+
+    .bottomarticles {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .cont-barraBusqueda {
+        margin: 15px 0;
+    }
     
-    
+
+
 }
 
-         
-    
-   
 
-@media (min-width: 990px){
-    .logo{
+
+
+
+@media (min-width: 990px) {
+    .logo {
         max-width: 350px;
     }
- 
-    .ultima, .ofertas{
+
+    .ultima,
+    .ofertas {
         box-shadow: none;
         width: 23%;
         margin: 0;
         position: relative;
         transition: all 450ms;
-            }
-    .ultima:hover, .ofertas:hover{
-
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
     
-    .burger-menu{
+    .burger-menu {
         display: none;
     }
-    .nav-bar{
+
+    .nav-bar {
         display: flex;
         justify-content: space-between;
         margin-top: 10px;
     }
-    .nav-bar ul{
+
+    .nav-bar ul {
         list-style: none;
         margin: 0px;
         padding: 0px;
         display: flex;
         justify-content: space-between;
-        }
-    a{
-        margin: 0 10px;
     }
-    .main-header-top{
+
+    a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .main-header-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }  
-    .toparticles{
-        display: flex;
-        flex-direction: row;
-            } 
-    .bottomarticles{
+    }
+
+    .toparticles {
         display: flex;
         flex-direction: row;
     }
-    .fa-truck{
+
+    .bottomarticles {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .fa-truck {
         color: #39b54a;
         size: 2em;
         background-color: white;
         display: flex;
         margin: 10px;
         position: relative;
-        left:150px;
+        left: 150px;
         bottom: 10px;
-        }
-    .footer-container{
+    }
+
+    .footer-container {
         display: flex;
         margin: 15px 0;
         padding: 10px;
-}
-.lineaFinal{
-    margin: 6px; 
-}
-}
-@media (min-width: 1200px){
+    }
 
-.nav-bar ul{
-    font-size: 19px;
+    .lineaFinal {
+        margin: 6px;
+    }
 }
-.compra-en-cuotas{
-    font-size: 19px;
-    font-weight: bolder;
-}
+
+@media (min-width: 1200px) {
+
+    .nav-bar ul {
+        font-size: 19px;
+        text-decoration: none;
+    }
+
+    .compra-en-cuotas {
+        font-size: 19px;
+        font-weight: bolder;
+    }
 }
