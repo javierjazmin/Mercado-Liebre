@@ -47,7 +47,7 @@ header {
 
 .register-container,
 .login-container {
-    width: 50%;
+    width: 100%;
     display: block;
     margin: auto;
     padding: 10px;
@@ -233,23 +233,23 @@ article {
 
 .cajaCafetera {
     display: flex;
-    text-align: left;
+    justify-content: space-around;
 }
 
 .cajaTv {
     display: flex;
-    text-align: left;
+    justify-content: space-around;
 }
 
 .cajaMac {
     display: flex;
-    text-align: left;
+    justify-content: space-around;
 
 }
 
 .cajaS10 {
     display: flex;
-    text-align: left;
+    justify-content: space-around;
 }
 
 .fa-truck {
@@ -436,6 +436,11 @@ h5 {
         justify-content: space-between;
         align-items: center;
     }
+    a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+    }
 
     .toparticles {
         display: flex;
@@ -458,7 +463,15 @@ h5 {
     .cont-barraBusqueda {
         margin: 15px 0;
     }
-    
+.register-container,
+.login-container {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #ebebeb;
+    justify-content: center;
+}
 
 
 }
