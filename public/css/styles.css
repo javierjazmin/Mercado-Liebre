@@ -30,6 +30,7 @@ header {
 .barraBusqueda {
     width: 100%;
     padding: 5px;
+    outline: none;
 }
 
 .fa-magnifying-glass {
@@ -79,7 +80,9 @@ header {
     padding: 12px;
     margin-bottom: 12px;
     width: 100%;
+    outline: none;
 }
+
 
 .radio-perfil {
     margin: auto;
@@ -174,7 +177,7 @@ section {
 }
 
 .articles {
-    padding: 24px;
+    padding: 21px;
     column-gap: 24px;
 
 
